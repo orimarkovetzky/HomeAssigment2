@@ -16,10 +16,15 @@ body {
   
   }
   
-  nav > a {
+ 
+  nav  a {
     padding: 0px 40px;
     font-weight: bolder;
+    transition: color 0.4s ease-in-out;
   }
+  nav a:hover,
+  nav a.active
+  {color: #0a1135;}
 
   h1 {
     font-size: 10rem;
@@ -95,13 +100,111 @@ main section {
     padding: 0px 40px;
     line-height: normal;
     flex-direction: column-reverse;
+
   }
+  .about ul {
+    list-style:circle;}
+  .about ul li 
+  {font-size: 35px;}
   img[alt="about Image"] {
     width: 100%;
     height: auto;
     border-radius: 20px;
     max-width: 350px;
   }
+
+ 
+
+  /* Projects styling */
+  #projects main {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 00px;
+  }
+  
+  #projects article {
+    text-align: center;
+    padding: 20px;
+  }
+  #projects main img {
+    width: 30%;
+    line-height: 30px;
+  }
+  #projects p {
+    line-height: 30px;
+    width: 50%;
+    margin: auto;
+  }
+  #projects h2 {
+    padding-top: 60px;
+  }
+  
+  /* Contact styling */
+  input,
+textarea {
+  box-sizing: border-box;
+  resize: vertical;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: #023047;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #216181;
+}
+
+fieldset {
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #2161811f;
+}
+
+input[type=button] {
+  border-radius: 4px;
+  padding: 12px;
+  border: 2px solid #0f607d;
+  margin: 20px 0px;
+}
+
+#align {
+  width: 100%;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+.contact img {
+  margin: 11% 0px;
+  filter: drop-shadow(8px 8px 10px rgba(68, 68, 68, 0.336));
+}
+
+img[alt="Contact"] {
+ 
+  padding: 0px 30px;
+  width: 50%;
+}
 
 /* Responsive styling */
 @media screen and (max-width: 1024px) {
@@ -195,6 +298,10 @@ main section {
     font-size: 15px;
     text-align: center;
     width: 90%;
+  }
+  #projects main img{
+    width: 60%;
+    line-height: 30px;
   }
 }
 body {
